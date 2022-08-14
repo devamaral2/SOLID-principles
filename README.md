@@ -2,7 +2,7 @@
 
 <details>
   <summary><strong> O que vamos aprender? </strong></summary><br />
- - asdafwawfawfawf
+ SOLID é um acrônimo utilizado para memorizarmos cinco principios básicos na engenharia de software, eles são amplamente divulgados pelo programador e escritor Robert C. Martin e tem como objetivo tornar a escrita de códigos com orientação à objetos mais simples, reutilizável, agil e padronizaods.  
   
 </details>
 
