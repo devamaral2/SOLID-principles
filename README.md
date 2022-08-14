@@ -23,11 +23,8 @@
 > manutenção  do códgo.
   
  ```typescript
-   const serge: array = [0, 1, 2]
-  function alter (): string {
-    return 'asd'
-  }
-  ```
+  
+ ```
   
 </details>
 
@@ -36,7 +33,10 @@
   
 <details>
   <summary> Single responsability principle </summary><br />
- - asdafwawfawfawf
+ 
+  O principio da responsabilidade única talvez seja o principio menos compreendido dos 5 principios criados pelo SOLID, hoje ele é descrito como:
+  
+  > *Um módulo deve ter uma e apenas uma, razão para mudar.*
   
 </details>
   
