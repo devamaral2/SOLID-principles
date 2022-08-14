@@ -11,7 +11,7 @@
 <details>
   <summary><strong> Você será capaz de: </strong></summary><br />
   
- > - Aplicar o principio da responsabilidade única(single-responsibility principle). </br>
+ > - Aplicar * o principio*  da responsabilidade única(single-responsibility principle). </br>
  > - Aplicar o principio da segregação de interfacer(interface segregation principle).
   
 </details>
@@ -19,7 +19,7 @@
 <details>
   <summary><strong> Porque isso é importante? </strong></summary><br />
   
-> A aplicação dos  `principios` SOLID tornará seu código mais legivel, será mais fácil realizar testes com ele e também ajudará no reaproveitamento e 
+> A aplicação dos  principios SOLID tornará seu código mais legivel, será mais fácil realizar testes com ele e também ajudará no reaproveitamento e 
 > manutenção  do códgo.
   
 </details>
