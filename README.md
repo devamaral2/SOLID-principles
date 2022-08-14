@@ -34,9 +34,11 @@
 <details>
   <summary> Single responsability principle </summary><br />
  
-  O principio da responsabilidade única talvez seja o principio menos compreendido dos 5 principios criados pelo SOLID, hoje ele é descrito como:
+  O principio da responsabilidade única talvez seja o principio menos compreendido dos 5 principios criados do SOLID, muito provavelmente pelo seu nome inadequado. Quando escutamos o nome principio da responsabilidade única
   
   > *Um módulo deve ter uma e apenas uma, razão para mudar.*
+  ![testes](https://user-images.githubusercontent.com/90219144/184556624-af51fbf2-ae87-480d-9c19-a7e916a0b18a.png)
+
   
 </details>
   
