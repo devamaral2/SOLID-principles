@@ -19,7 +19,7 @@
 <details>
   <summary><strong> Porque isso é importante? </strong></summary><br />
   
-> A aplicação dos principios SOLID tornará seu código mais legivel, será mais fácil realizar testes com ele e também ajudará no reaproveitamento e 
+> A aplicação dos  ´principios´ SOLID tornará seu código mais legivel, será mais fácil realizar testes com ele e também ajudará no reaproveitamento e 
 > manutenção  do códgo.
   
 </details>
@@ -43,7 +43,8 @@
 
 <details>
   <summary><strong> Recursos Adicionais </strong></summary><br />
- - asdafwawfawfawf
+ 
+  https://www.youtube.com/watch?v=P9RJs4oatQM - 139 - Entenda o Single Responsibility Principle do SOLID | theWiseDev SOLID
   
 </details>
 
