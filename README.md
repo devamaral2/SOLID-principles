@@ -58,14 +58,51 @@ public class Estudante {
   ```
   Se você pensou que sim, eu digo que você está errado! 
 
-  Vamos pensar mais um pouco sobre a classe Estudante, provavelmente ela se refere a estudantes de uma instituição de ensino com vários departamentos que trabalham de forma independente. Muito provavelmente quem registra um novo estudante está num departamento que lida com o cadastro dos estudantes de uma forma abrangente, quem lida com os resultados dos estudantes em testes trabalha para o departamento didático e quem envia e-mails para os estudantes trabalha no departamento disciplinar. Vamos supor que o departamento disciplinar descida criar outra função para enviar e-mails quando os alunos atinjam uma nota baixa ou que o departamento de registro queira enviar um email para o aluno após ele ter se registrado. Perceba que são departamentos independentes, realizando alterações em funções e atributos que são utilizadas em conjunto. Se o departamento de registro  pedir uma alteração que quebre a lógica criada para o departamento disciplinar provavelmente isso será descoberto apenas após criarmos uma falha no software.
+  Vamos pensar mais um pouco sobre a classe Estudante, provavelmente ela se refere a estudantes de uma instituição de ensino com vários departamentos que trabalham de forma independente. Muito provavelmente quem registra um novo estudante está num departamento que lida com o cadastro dos estudantes de uma forma abrangente, quem lida com os resultados dos estudantes em testes trabalha para o departamento didático e quem envia e-mails para os estudantes trabalha no departamento disciplinar. Vamos supor que o departamento disciplinar descida criar outra função para enviar e-mails quando os alunos atinjam uma nota baixa ou que o departamento de registro queira enviar um email para o aluno após ele ter se registrado. Perceba que são departamentos independentes, realizando alterações em funções e atributos que são utilizadas em conjunto. Se o departamento de registro  pedir uma alteração que quebre a lógica criada para o departamento disciplinar provavelmente isso será descoberto apenas após criarmos uma falha no software. Para resolver este tipo de problema é que foi criado o princípio da responsabilidade única, à grosso modo não podemos atender aos interesses de dois stackholders diferentes numa mesma classe e por isso a melhor forma de criar as trẽs funções do exemplo é: 
 
-  ####<strong>Não é sobre 
+  ```typescript
+public class Registro de estudante {
+    public void registrarEstudante() {
+        // lógica
+    }
+}
+public class ResultadoDeEstudante {
+    public calcularResultadosDoEstudante(): void {
+        // lógica
+    }
+}
+public class EmailDeEstutante {
+    public enviarEmail(): void {
+        // lógica
+    }
+}
+  
+  ```
+  No caso todas as funções compõe os dados do estudante, mas nenhuma delas sabe da existência da outra, e assim evitamos duplicações e qualquer desintendimento entre os atores da aplicação desenvolvida.
+  
+  
+  ####<strong>Não é sobre funções e sim sobre atores</strong>
+  
+   O princípio da responsabilidade única vem sido entendido como: 
   
   > *Um módulo deve ter uma e apenas uma, razão para mudar.*
 
+  Neste caso a razão para mudar são os usuários e stackholders, pois os softwares mudam com razão aos intereses destes atores, e para simplificar a mensagem podemos definir o SRP como: 
+  
+  > *Um módulo deve ser responsável por um e apenas um ator.*
+  
+  Um módulo no caso é apenas um conjunto coeso de funções e estruturas de dados, e esta coesão é a vinculação a apenas um ator, com um objetivo determinado.
   
 </details>
+  
+<details>
+ <summary> Interface segregation principle </summary><br />
+
+  ### <strong>O princípio da segregação de interface</strong>
+  
+  
+</details>  
+  
   
 </details>
 
@@ -78,7 +115,11 @@ public class Estudante {
 <details>
   <summary><strong> Recursos Adicionais </strong></summary><br />
  
+  A principal fonte para este conteúdo é o livro Clean Arquiteture de Robert C. Martin
   https://www.youtube.com/watch?v=P9RJs4oatQM - 139 - Entenda o Single Responsibility Principle do SOLID | theWiseDev SOLID
+  https://en.wikipedia.org/wiki/Single-responsibility_principle - Página da wikipédia para o princípio da responsabilidade única.
+  https://en.wikipedia.org/wiki/Interface_segregation_principle - Página da wikipédia para o princípio da segregação de interface.
+  https://www.youtube.com/watch?v=zHiWqnTWsn4&t=459s - Palestra de Robert C. Martin sobre os princípios do SOLID.
   
 </details>
 
