@@ -22,9 +22,9 @@
 > A aplicação dos  principios SOLID tornará seu código mais legivel, será mais fácil realizar testes com ele e também ajudará no reaproveitamento e 
 > manutenção  do códgo.
   
- ```javascript
-   const serge = [0, 1, 2]
-  function alter () {
+ ```typescript
+   const serge: array = [0, 1, 2]
+  function alter (): string {
     return 'asd'
   }
   ```
