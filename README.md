@@ -8,8 +8,8 @@
 
 <details>
   <summary><strong> Você será capaz de: </strong></summary><br />
- > Aplicar o principio da responsabilidade única (single-responsibility principle).
- > 
+ * Aplicar o principio da responsabilidade única(single-responsibility principle).
+ * Aplicar o principio da segregação de interfacer(interface segregation principle).
   
 </details>
 
