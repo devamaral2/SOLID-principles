@@ -81,7 +81,7 @@ public class EmailDeEstutante {
   No caso todas as funções compõe os dados do estudante, mas nenhuma delas sabe da existência da outra, e assim evitamos duplicações e qualquer desintendimento entre os atores da aplicação desenvolvida.
   
   
-  ####<strong>Não é sobre funções e sim sobre atores</strong>
+#### <strong>Não é sobre funções e sim sobre atores</strong>
   
    O princípio da responsabilidade única vem sido entendido como: 
   
