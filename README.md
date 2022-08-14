@@ -8,7 +8,8 @@
 
 <details>
   <summary><strong> Você será capaz de: </strong></summary><br />
- - asdafwawfawfawf
+ > Aplicar o principio da responsabilidade única (single-responsibility principle).
+ > 
   
 </details>
 
