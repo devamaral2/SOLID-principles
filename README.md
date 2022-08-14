@@ -1,4 +1,4 @@
-# SOLID- introdução aos principios S e I
+## SOLID- introdução aos principios S e I
 
 <details>
   <summary><strong> O que vamos aprender? </strong></summary><br />
@@ -8,8 +8,8 @@
 
 <details>
   <summary><strong> Você será capaz de: </strong></summary><br />
- * Aplicar o principio da responsabilidade única(single-responsibility principle).
- * Aplicar o principio da segregação de interfacer(interface segregation principle).
+> - Aplicar o principio da responsabilidade única(single-responsibility principle). </br>
+> - Aplicar o principio da segregação de interfacer(interface segregation principle).
   
 </details>
 
