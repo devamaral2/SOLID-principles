@@ -123,8 +123,7 @@ public class SócioTorcedor {
   Este problema é facilmente resolvido segregando os métodos por interface. 
   
     ```typescript
-  
-  interface ISócioTorcedorComum {
+interface ISócioTorcedorComum {
     calcularMensalidade(): void
     verBrindesConcedidos(): void
   }
@@ -153,9 +152,7 @@ public class SócioTorcedor {
         // lógica
     }
   }
-  
-   ```
-  
+  ```
   
   Agora toda vez que quisermos criar uma instância de um sócio torcedor que não seja premium não teremos mais nenhuma dependência do método premiaçãoParaPremium, e assim uma alteração no mesmo não levararão instancias de SocioTorcedorComum a serem reimplantadas e rrecopiladas.
   
