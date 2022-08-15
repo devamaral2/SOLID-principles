@@ -56,6 +56,7 @@ public class Estudante {
 
 } 
   ```
+  
   Se você pensou que sim, eu digo que você está errado! 
 
   Vamos pensar mais um pouco sobre a classe Estudante, provavelmente ela se refere a estudantes de uma instituição de ensino com vários departamentos que trabalham de forma independente. Muito provavelmente quem registra um novo estudante está num departamento que lida com o cadastro dos estudantes de uma forma abrangente, quem lida com os resultados dos estudantes em testes trabalha para o departamento didático e quem envia e-mails para os estudantes trabalha no departamento disciplinar. Vamos supor que o departamento disciplinar descida criar outra função para enviar e-mails quando os alunos atinjam uma nota baixa ou que o departamento de registro queira enviar um email para o aluno após ele ter se registrado. Perceba que são departamentos independentes, realizando alterações em funções e atributos que são utilizadas em conjunto. Se o departamento de registro  pedir uma alteração que quebre a lógica criada para o departamento disciplinar provavelmente isso será descoberto apenas após criarmos uma falha no software. Para resolver este tipo de problema é que foi criado o princípio da responsabilidade única, à grosso modo não podemos atender aos interesses de dois stackholders diferentes numa mesma classe e por isso a melhor forma de criar as trẽs funções do exemplo é: 
@@ -153,23 +154,26 @@ public class SócioTorcedor {
   }
     ```
   
+  
   Agora toda vez que quisermos criar uma instância de um sócio torcedor que não seja premium não teremos mais nenhuma dependência do método premiaçãoParaPremium, e assim uma alteração no mesmo não levararão instancias de SocioTorcedorComum a serem reimplantadas e rrecopiladas.
   
-#### <strong>Não é só uma questão de linguagens estaticamente tipadas</strong>
-  
-  A segregação de interface também pode ser utilizada para arquitetura de softawares também, pense que toda vez que se adota um framework por exemplo uma alteração em recursos pode quebrar um sistema determinado, mesmo que o mesmo não utilize o recurso determinado.
+####<strong>Não é só uma questão de linguagens estaticamente tipadas</strong>
   
   
-</details>  
+  A segregação de interface também pode ser utilizada para arquitetura de softawares também, pense que toda vez que se adota um framework por 
+  exemplo uma alteração em recursos pode quebrar um sistema determinado, mesmo que o mesmo não utilize o recurso determinado.
   
   
+</details>    
 </details>
+
+
 
 <details>
   <summary><strong> Vamos praticar! </strong></summary><br />
   
-  
 </details>
+
 
 <details>
   <summary><strong> Recursos Adicionais </strong></summary><br />
