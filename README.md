@@ -105,7 +105,7 @@ public class EmailDeEstutante {
   
   O príncipio da segregação de interface define que uma classe deve implementar apenas funções que irá utilizar. 
     
-  ```typescript
+   ```typescript
 public class SócioTorcedor {
     public calcularMensalidade(): void {
         // lógica
@@ -151,7 +151,7 @@ public class SócioTorcedor {
         // lógica
     }
   }
-    ```
+   ```
   
   
   Agora toda vez que quisermos criar uma instância de um sócio torcedor que não seja premium não teremos mais nenhuma dependência do método premiaçãoParaPremium, e assim uma alteração no mesmo não levararão instancias de SocioTorcedorComum a serem reimplantadas e rrecopiladas.
