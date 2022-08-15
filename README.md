@@ -62,7 +62,7 @@ public class Estudante {
 
   ```typescript
 public class Registro de estudante {
-    public void registrarEstudante() {
+    public registrarEstudante(): void {
         // lógica
     }
 }
@@ -78,6 +78,7 @@ public class EmailDeEstutante {
 }
   
   ```
+  
   No caso todas as funções compõe os dados do estudante, mas nenhuma delas sabe da existência da outra, e assim evitamos duplicações e qualquer desintendimento entre os atores da aplicação desenvolvida.
   
   
@@ -91,6 +92,7 @@ public class EmailDeEstutante {
   
   > *Um módulo deve ser responsável por um e apenas um ator.*
   
+  Ou seja, são estes atores que definem o princípio, não podemos ter mais de um ator por módulo porque certamente os códigos tenderiam a gerar conflito com decisões que não são reconhecidas por todos os atores que estão usando aquele módulo.
   Um módulo no caso é apenas um conjunto coeso de funções e estruturas de dados, e esta coesão é a vinculação a apenas um ator, com um objetivo determinado.
   
 </details>
@@ -99,6 +101,63 @@ public class EmailDeEstutante {
  <summary> Interface segregation principle </summary><br />
 
   ### <strong>O princípio da segregação de interface</strong>
+  
+  O príncipio da segregação de interface define que uma classe deve implementar apenas funções que irá utilizar. 
+    
+       ```typescript
+public class SócioTorcedor {
+    public calcularMensalidade(): void {
+        // lógica
+    }
+    public verBrindesConcedidos(): void {
+        // lógica
+    }
+    public premiaçãoParaPremium(): void {
+        // lógica
+    }
+}
+  
+  ```
+  No caso acima temos dois sócio torcedores, member1 e member2, o membro dois é sócio torcedor prémio e ele usará todos os métodos presentes na classe SócioTorcedor, enquanto o member1 tem uma assinatura comum e nunca usará o método para os membros premium premiaçãoParaPremium. Caso o programador esteja usando uma linguagem como java, toda vez que houver uma alteração na classe SocioTorcedor no método premiaçãoParaPremium o member1 será recopilado e reimplantado sem nescecidade alguma, uma vez que este é um método não utilizado pelo member1. 
+  Este problema é facilmente resolvido segregando os métodos por interface. 
+  
+    ```typescript
+  interface ISócioTorcedorComum {
+    calcularMensalidade(): void
+    verBrindesConcedidos(): void
+  }
+  
+  interface ISócioTorcedorPremium extends SócioTorcedorComum {
+    premiaçãoParaPremium(): void
+  }
+  
+  public class SócioTorcedorComum implements ISócioTorcedorComum {
+    public calcularMensalidade(): void {
+        // lógica
+    }
+    public verBrindesConcedidos(): void {
+        // lógica
+    }
+  }
+   
+  public class SócioTorcedorPremium implements ISócioTorcedorPremium{
+    public calcularMensalidade(): void {
+        // lógica
+    }
+    public verBrindesConcedidos(): void {
+        // lógica
+    }
+    public premiaçãoParaPremium(): void {
+        // lógica
+    }
+  }
+    ```
+  
+  Agora toda vez que quisermos criar uma instância de um sócio torcedor que não seja premium não teremos mais nenhuma dependência do método premiaçãoParaPremium, e assim uma alteração no mesmo não levararão instancias de SocioTorcedorComum a serem reimplantadas e rrecopiladas.
+  
+#### <strong>Não é só uma questão de linguagens estaticamente tipadas</strong>
+  
+  A segregação de interface também pode ser utilizada para arquitetura de softawares também, pense que toda vez que se adota um framework por exemplo uma alteração em recursos pode quebrar um sistema determinado, mesmo que o mesmo não utilize o recurso determinado.
   
   
 </details>  
