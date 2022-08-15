@@ -174,6 +174,62 @@ interface ISócioTorcedorComum {
 <details>
   <summary><strong> Vamos praticar! </strong></summary><br />
   
+  Refatore o código abaixo pensando nos príncipios estudados hoje. Trafa-se de um zoológico, mas completamente desorganizado, tanto para classificar os animais como para definir o trabalho dos funcionários. Lembre-se de pensar nos atores que estão relacionados com as atividas descritas.
+  
+```typescript
+  
+
+  public class Animal {
+    private bico: string;
+    privete dentes: string;
+    private pata: string;
+    private tromba: string;
+    private garra: string;
+    private corpo: string;
+    private pescoço: string;
+    private asas: string;
+    private mamifero: boolean;
+    private ave: boolean;
+  
+    public comer(): void {};
+    public correr(): void {};
+    public dormir(): void {};
+    public voar(): void {};
+    public uivar(): void {};
+    public rugir(): void {};
+  }
+   
+ public class Falcão extends Animal() {};
+ public class Leão extends Animal() {};
+ public class Elefante extends Animal() {};
+ public class Girafa extends Animal() {};
+ public class Lobo extends Animal() {};
+ public class Pinguim extends Animal() {};
+ public class Jacaré extends Animal() {};
+ public class Ornitorrinco extends Animal() {};
+  
+ public class LarDosPássaros() {
+   public definirHorarioFaxina(): void;   
+   public definirHorarioVisita(): void;   
+   public verTratamentosVeterináriosDoDia(): void;   
+ }
+  
+  public class CovaDosLeaos() {
+   public definirHorarioFaxina(): void;   
+   public definirHorarioVisita(): void;   
+   public verTratamentosVeterináriosDoDia(): void;   
+   public verAcidentesDoMes(): void;
+ } 
+  
+   public class SavanaDosElefantes() {
+   public definirHorarioFaxina(): void;   
+   public definirHorarioVisita(): void;   
+   public verTratamentosVeterináriosDoDia(): void;   
+   public verAnimaisComCarrapato(): void;
+ } 
+  
+```
+  
 </details>
 
 
