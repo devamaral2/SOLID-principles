@@ -105,7 +105,7 @@ public class EmailDeEstutante {
   
   O príncipio da segregação de interface define que uma classe deve implementar apenas funções que irá utilizar. 
     
-  ```typescript
+```typescript
 public class SócioTorcedor {
     public calcularMensalidade(): void {
         // lógica
@@ -117,13 +117,13 @@ public class SócioTorcedor {
         // lógica
     }
 } 
-    ```
-   ```
+```
+
   
   No caso acima temos dois sócio torcedores, member1 e member2, o membro dois é sócio torcedor prémio e ele usará todos os métodos presentes na classe SócioTorcedor, enquanto o member1 tem uma assinatura comum e nunca usará o método para os membros premium premiaçãoParaPremium. Caso o programador esteja usando uma linguagem como java, toda vez que houver uma alteração na classe SocioTorcedor no método premiaçãoParaPremium o member1 será recopilado e reimplantado sem nescecidade alguma, uma vez que este é um método não utilizado pelo member1. 
   Este problema é facilmente resolvido segregando os métodos por interface. 
   
- ```typescript
+```typescript
   
 interface ISócioTorcedorComum {
     calcularMensalidade(): void
@@ -154,8 +154,7 @@ interface ISócioTorcedorComum {
         // lógica
     }
   }
-    ```
-    ```
+```
   
   
   Agora toda vez que quisermos criar uma instância de um sócio torcedor que não seja premium não teremos mais nenhuma dependência do método premiaçãoParaPremium, e assim uma alteração no mesmo não levararão instancias de SocioTorcedorComum a serem reimplantadas e rrecopiladas.
