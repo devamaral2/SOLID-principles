@@ -242,5 +242,7 @@ interface ISócioTorcedorComum {
   https://en.wikipedia.org/wiki/Interface_segregation_principle - Página da wikipédia para o princípio da segregação de interface.
   https://www.youtube.com/watch?v=zHiWqnTWsn4&t=459s - Palestra de Robert C. Martin sobre os princípios do SOLID.
   
+  Ending!
+  
 </details>
 
